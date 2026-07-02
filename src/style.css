@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* 定義專案設計系統主題色與變數 */
+@theme {
+  --color-brand-primary: #059669;    /* 主色調：翡翠綠，象徵環保、乾淨與健康 */
+  --color-brand-secondary: #0d9488;  /* 輔助色：湖水綠，沉穩且具現代感 */
+  --color-brand-accent: #f59e0b;     /* 強調色：溫暖的琥珀橘，用於聯絡預約按鈕 */
+  --color-brand-dark: #1e293b;       /* 深色文字與背景 */
+  --color-brand-light: #f8fafc;      /* 淺色背景與區域 */
+  --color-brand-muted: #64748b;      /* 靜音/輔助文字色 */
+
+  --font-sans: 'Outfit', 'Inter', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+}
+
+/* 全域基礎樣式與滾動設定 */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* 避免錨點定位時被置頂的 Navbar 遮擋 */
+  }
+  body {
+    @apply text-brand-dark bg-white antialiased selection:bg-brand-primary/20 selection:text-brand-primary;
+  }
+}
+
+/* 自訂元件與動畫公用類別 */
+@layer utilities {
+  /* 毛玻璃效果 */
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* 深色毛玻璃效果 */
+  .glassmorphism-dark {
+    background: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* 滾動動畫進入狀態 */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
