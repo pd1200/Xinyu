@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(), // 載入 Tailwind CSS v4 編譯插件
   ],
-  // 自動適配 GitHub Pages 二級目錄部署，本地開發時為根路徑 '/'
-  base: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/',
+  // 設定 GitHub Pages 的專案路徑前綴，確保本地打包部署時 CSS、JS 與圖片能正確載入
+  base: '/Xinyu/',
 })
