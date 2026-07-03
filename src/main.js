@@ -13,7 +13,7 @@
 // ==========================================
 
 // Google 表單預設預留網址，使用者建置後可於此替換
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdg2VDgiLiqSzWG7tTDTYc_4zYAJOFTR5yqc2R8JOWi2RdLnw/viewform?usp=publish-editor";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdg2VDgiLiqSzWG7tTDTYc_4zYAJOFTR5yqc2R8JOWi2RdLnw/viewform?usp=header";
 
 // 網頁加載完成後執行
 document.addEventListener("DOMContentLoaded", () => {
