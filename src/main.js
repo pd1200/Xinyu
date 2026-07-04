@@ -179,7 +179,7 @@ function showCustomModal(clientName, messageContent) {
           </a>
           
           <!-- 管道二：寄送 Email 信箱 -->
-          <a href="mailto:a0920800806@gmail.com?subject=${encodeURIComponent('信宇清潔 - 預約現場估價')}&body=${encodeURIComponent(messageContent)}"
+          <a href="mailto:service@xinyuclean.com.tw?subject=${encodeURIComponent('信宇清潔 - 預約現場估價')}&body=${encodeURIComponent(messageContent)}"
              class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 transition-colors duration-200">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
